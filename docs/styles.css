@@ -1,18 +1,233 @@
+:root {
+    --color-bg: #151213;
+    --color-bg-light: #FFFFFF;
+    --color-primary: #FE3466;
+    --color-text-on-bg: #FFFFFF;
+    --color-text-corpus: #d8cbcb;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    padding: 0;
+    padding: 140px 0 140px 120px;
 }
 
 main {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    color: var(--color-text-on-bg);
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+a {
+    all: unset;
+    text-decoration: none;
+    color: inherit;
 }
 
 #foto-perfil {
-    width: 350px;
-    height: 350px;
+    width: 240px;
+    border-radius: inherit;
+}
+
+.personal-infocard {
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--color-bg-light);
+    border-radius: 16px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: #6A6B6E;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.personal-infocard-title {
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.icons-container {
+    display: flex;
+    gap: 24px;
+}
+
+.icon {
+    width: 20px;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    width: 50%;
+    background-color: var(--color-primary);
+}
+
+.content-container {
+    position: relative;
+    left: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-text-corpus);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.section-header {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--color-text-on-bg);
+}
+
+.section-subheader {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-text-on-bg);
+}
+
+.section-header-divider {
+    border: none;
+    height: 5px;
+    width: 40px;
+    background-color: var(--color-primary);
+    border-radius: 25px;
+    margin: 8px 0 0 0;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.topic-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.topic {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+
+.arrow-down-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 120px;
+    cursor: pointer;
+    color: var(--color-text-on-bg);
+}
+
+#arrow-down {
+    fill: var(--color-primary);
+    width: 28px;
+    background-color: var(--color-primary);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+#projects {
+    display: flex;
+    max-width: 1200px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.project-image {
+    width: 560px;
+    height: auto;
+    border-radius: 16px;
+    padding: 8px;
+    border: 2px solid #EC4F00;
+}
+
+.project-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.project-title-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--color-text-on-bg);
+}
+
+.project-dash {
+    border: none;
+    height: 5px;
+    width: 20px;
+    border-radius: 25px;
+}
+
+.tech-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #FFFFFF;
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: var(--color-bg);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.tech-icon {
+    width: 20px;
+    height: auto;
 }
