@@ -9,37 +9,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet"
-    >
+        rel="stylesheet">
     <link rel="icon" href="./assets/icons/tag.svg" type="image/x-icon">
     <title>Vinicius Laranjeiro</title>
 </head>
 
 <body>
-    <main>
-        <aside class="personal-infocard">
-            <img src="./assets/imgs/foto-perfil.jpeg" alt="Foto de perfil" id="foto-perfil">
-            <div style="margin-bottom: 30px; margin-top: 10px">
-                <p class="personal-infocard-title">Vinicius Laranjeiro</p>
-                <hr class="divider">
-            </div>
-            <p>Desenvolvedor web</p>
-            <div class="icons-container">
-                <img class="icon" src="./assets/icons/github.svg" alt="Github">
-                <img class="icon" src="./assets/icons/linkedin.svg" alt="LinkedIn">
-                <img class="icon" src="./assets/icons/gmail.svg" alt="Gmail">
-            </div>
-        </aside>
+    <main class="content-container">
+        <section id="about" class="section">
+            <aside class="personal-infocard">
+                <img src="./assets/imgs/foto-perfil.jpeg" alt="Foto de perfil" id="foto-perfil">
+                <div style="margin-bottom: 30px; margin-top: 10px">
+                    <p class="personal-infocard-title">Vinicius Laranjeiro</p>
+                    <hr class="divider">
+                </div>
+                <p>Desenvolvedor web</p>
+                <div class="icons-container">
+                    <img class="icon" src="./assets/icons/github.svg" alt="Github">
+                    <img class="icon" src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                    <img class="icon" src="./assets/icons/gmail.svg" alt="Gmail">
+                </div>
+            </aside>
 
-        <div class="content-container">
-            <section id="about" class="section">
+            <div id="about-presentation">
                 <div>
                     <h2 class="section-header">Sobre Mim</h2>
                     <hr class="section-header-divider">
                 </div>
                 <p>
-                    Oi, me chamo Vinicius Laranjeiro e sou um estudante de Desenvolvimento de Software. Atualmente, meu
-                    foco está em desenvolver sistemas para a Web, especialmente front-end. Porém, sempre que possível,
+                    Oi, me chamo Vinicius Laranjeiro e sou um estudante de Desenvolvimento de Software. Atualmente,
+                    meu
+                    foco está em desenvolver sistemas para a Web, especialmente front-end. Porém, sempre que
+                    possível,
                     gosto de conhecer áreas correlatas — tem muita coisa interessante por aí.
                 </p>
                 <div class="topics-container">
@@ -65,15 +66,18 @@
                         <p>Você pode conferir projetos que eu colaborei logo abaixo</p>
                     </div>
                 </a>
-            </section>
+            </div>
+        </section>
 
-            <section id="projects" class="section">
-                <div>
-                    <h2 class="section-header">Projetos</h2>
-                    <hr class="section-header-divider">
-                </div>
+        <section id="projects" class="section">
+            <div>
+                <h2 class="section-header">Projetos</h2>
+                <hr class="section-header-divider">
+            </div>
+            <div class="projects-grid">
                 <div class="project-container" style="padding-top: 12px;">
-                    <img src="./assets/imgs/guara.gif" alt="Projeto Guará" class="project-image">
+                    <img src="./assets/imgs/guara.gif" alt="Projeto Guará" class="project-image"
+                        style="border-color: #EC4F00;">
                     <div class="project-description-container">
                         <div class="project-title-container">
                             <div class="project-dash" style="background-color: #EC4F00;"></div>
@@ -81,12 +85,14 @@
                         </div>
                         <p>
                             Sistema de Internet Banking para lidar com operações bancárias simples, como saques,
-                            depósitos e transferências. Oferece funcionalidades tanto para clientes quanto para gerentes
+                            depósitos e transferências. Oferece funcionalidades tanto para clientes quanto para
+                            gerentes
                             (gerais e de conta). Além disso, possui um sistema simplificado de rendimentos e cheque
                             especial.
                         </p>
                         <p>
-                            Fui o Scrum Master do projeto e pude contribuir no desenvolvimento back-end, principalmente
+                            Fui o Scrum Master do projeto e pude contribuir no desenvolvimento back-end,
+                            principalmente
                             nas funcionalidades de rendimento e configurações.
                         </p>
                         <div class="tech-row">
@@ -105,19 +111,128 @@
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section id="projects" class="section">
-                <div>
-                    <h2 class="section-header">Tecnologias e Áreas de atuação</h2>
-                    <hr class="section-header-divider">
+                <div class="project-container" style="padding-top: 12px;">
+                    <img src="./assets/imgs/sabia.gif" alt="Projeto Guará" class="project-image"
+                        style="border-color: #005300;">
+                    <div class="project-description-container">
+                        <div class="project-title-container">
+                            <div class="project-dash" style="background-color: #005300;"></div>
+                            <h3>Sabiá</h3>
+                        </div>
+                        <p>
+                            Sistema de gestão de entrada de mercadorias em indústrias do setor de agronegócios. Gerencia
+                            produtos, fornecedores, ordens de compra e os usuários do sistema e também permite o
+                            monitoramento das etapas de recebimento, desde o registro da nota fiscal até a conferência
+                            quantitativa e qualitativa. Também conta com a geração de um relatório de conformidade para
+                            indicar o aceite ou recusa da mercadoria com base em regras pré-cadastradas.
+                        </p>
+                        <p>
+                            Atuei como desenvolvedor full-stack no projeto, com participação pontual nas funcionalidades
+                            de gerenciamento. Tive meu primeiro contato significativo com React durante a migração do
+                            sistema de uma estrutura estática, atuando no desenvolvimento da lógica dos componentes e na
+                            integração com o back-end.
+                        </p>
+                        <div class="tech-row">
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/react.svg" alt="Logo do React">
+                                <p>React</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/typescript.svg" alt="Logo do Typescript">
+                                <p>Typescript</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/express.svg" alt="Logo do Express">
+                                <p>Express</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/mysql.svg" alt="Logo do MySQL">
+                                <p>MySQL</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>Em desenvolvimento</p>
-            </section>
+            </div>
+        </section>
 
-            <p>-</p>
-        </div>
-
+        <section id="technologies" class="section">
+            <div>
+                <h2 class="section-header">Tecnologias e Áreas de atuação</h2>
+                <hr class="section-header-divider">
+            </div>
+            <div class="tech-tag-row">
+                <p class="tech-tag tech-frontend">#front-end</p>
+                <p class="tech-tag tech-backend">#back-end</p>
+                <p class="tech-tag tech-database">#banco-de-dados</p>
+                <p class="tech-tag tech-others">#outras-ferramentas</p>
+            </div>
+            <div class="tech-description-container">
+                <div>
+                    <h3 style="margin-bottom: 8px">Tive contato</h3>
+                    <div class="tech-tag-row">
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/placeholder.svg" alt="placeholder" class="tech-img tech-frontend">
+                            <span class="hover-text">Placeholder</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 8px">Tenho conhecimento</h3>
+                    <div class="tech-tag-row">
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/react.svg" alt="logo do react" class="tech-img tech-frontend">
+                            <span class="hover-text">React</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/javascript.svg" alt="logo do javascript" class="tech-img tech-frontend">
+                            <span class="hover-text">JavaScript</span>
+                        </div>
+                        <div class="tech-tag-row">
+                            <div class="img-hover-container">
+                                <img src="./assets/icons/colored/html5.svg" alt="logo do html" class="tech-img tech-frontend">
+                                <span class="hover-text">HTML5</span>
+                            </div>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/css3.svg" alt="logo do css3" class="tech-img tech-frontend">
+                            <span class="hover-text">CSS3</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/python.svg" alt="logo do python" class="tech-img tech-backend">
+                            <span class="hover-text">Python</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/flask.svg" alt="logo do flask" class="tech-img tech-backend">
+                            <span class="hover-text">Flask</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/typescript.svg" alt="logo do typescript" class="tech-img tech-backend">
+                            <span class="hover-text">Typescript</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/node.svg" alt="logo do node.js" class="tech-img tech-backend">
+                            <span class="hover-text">Node.js</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/express.svg" alt="logo do express" class="tech-img tech-backend">
+                            <span class="hover-text">Express</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/mysql.svg" alt="logo do mysql" class="tech-img tech-database">
+                            <span class="hover-text">MySQL</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/git.svg" alt="logo do git" class="tech-img tech-others">
+                            <span class="hover-text">Git</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/jira.svg" alt="logo do jira" class="tech-img tech-others">
+                            <span class="hover-text">Jira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
