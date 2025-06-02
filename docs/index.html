@@ -15,23 +15,29 @@
 </head>
 
 <body>
-    <main class="content-container">
-        <section id="about" class="section">
-            <aside class="personal-infocard">
-                <img src="./assets/imgs/foto-perfil.jpeg" alt="Foto de perfil" id="foto-perfil">
+    <main class="content-container flex-col">
+        <section id="about" class="section flex-row">
+            <aside class="personal-infocard flex-col">
+                <img src="./assets/imgs/foto-perfil.jpeg" alt="Foto de perfil" id="profile-pic">
                 <div style="margin-bottom: 30px; margin-top: 10px">
                     <p class="personal-infocard-title">Vinicius Laranjeiro</p>
                     <hr class="divider">
                 </div>
                 <p>Desenvolvedor web</p>
-                <div class="icons-container">
-                    <img class="icon" src="./assets/icons/github.svg" alt="Github">
-                    <img class="icon" src="./assets/icons/linkedin.svg" alt="LinkedIn">
-                    <img class="icon" src="./assets/icons/gmail.svg" alt="Gmail">
+                <div class="flex-row gap-lg">
+                    <a href="https://github.com/vdlaranjeiro" target="_blank">
+                        <img class="icon" src="./assets/icons/github.svg" alt="Github">
+                    </a>
+                    <a href="">
+                        <img class="icon" src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:yinioliveira@gmail.com">
+                        <img class="icon" src="./assets/icons/gmail.svg" alt="Gmail">
+                    </a>
                 </div>
             </aside>
 
-            <div id="about-presentation">
+            <div class="flex-col gap-lg">
                 <div>
                     <h2 class="section-header">Sobre Mim</h2>
                     <hr class="section-header-divider">
@@ -43,25 +49,25 @@
                     possível,
                     gosto de conhecer áreas correlatas — tem muita coisa interessante por aí.
                 </p>
-                <div class="topics-container">
+                <div class="flex-col gap-md">
                     <h3 class="section-subheader">Alguns dos meus interesses recentes:</h3>
                     <div>
-                        <div class="topic-row">
+                        <div class="flex-row gap-sm items-center">
                             <div class="topic"></div>
                             <p>Acessibilidade</p>
                         </div>
-                        <div class="topic-row">
+                        <div class="flex-row gap-sm items-center">
                             <div class="topic"></div>
                             <p>Machine Learning</p>
                         </div>
-                        <div class="topic-row">
+                        <div class="flex-row gap-sm items-center">
                             <div class="topic"></div>
                             <p>Programação criativa (Generative Art)</p>
                         </div>
                     </div>
                 </div>
                 <a href="#projects">
-                    <div class="arrow-down-container">
+                    <div class="arrow-down-container flex-row items-center gap-sm">
                         <img src="./assets/icons/arrow.svg" alt="Seta para baixo" id="arrow-down">
                         <p>Você pode conferir projetos que eu colaborei logo abaixo</p>
                     </div>
@@ -69,19 +75,23 @@
             </div>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="section flex-col">
             <div>
                 <h2 class="section-header">Projetos</h2>
                 <hr class="section-header-divider">
             </div>
-            <div class="projects-grid">
+            <div class="flex-col gap-2xl">
                 <div class="project-container" style="padding-top: 12px;">
-                    <img src="./assets/imgs/guara.gif" alt="Projeto Guará" class="project-image"
+                    <img src="./assets/imgs/guara.png" alt="Projeto Guará" class="project-image"
                         style="border-color: #EC4F00;">
-                    <div class="project-description-container">
-                        <div class="project-title-container">
+                    <div class="project-description-container flex-col gap-md">
+                        <div class="project-title-container flex-row gap-sm items-center">
                             <div class="project-dash" style="background-color: #EC4F00;"></div>
                             <h3>Guará</h3>
+                            <a href="https://github.com/vdlaranjeiro/Guara-Internet-Banking" target="_blank">
+                                <img class="project-link" src="./assets/icons/link.svg"
+                                    alt="Link para o GitHub do projeto">
+                            </a>
                         </div>
                         <p>
                             Sistema de Internet Banking para lidar com operações bancárias simples, como saques,
@@ -95,7 +105,7 @@
                             principalmente
                             nas funcionalidades de rendimento e configurações.
                         </p>
-                        <div class="tech-row">
+                        <div class="tech-row flex-row gap-md">
                             <div class="tech-badge">
                                 <img class="tech-icon" src="./assets/icons/python.svg" alt="Logo do Python">
                                 <p>Python</p>
@@ -112,12 +122,16 @@
                     </div>
                 </div>
                 <div class="project-container" style="padding-top: 12px;">
-                    <img src="./assets/imgs/sabia.gif" alt="Projeto Guará" class="project-image"
+                    <img src="./assets/imgs/sabia.png" alt="Projeto Sabiá" class="project-image"
                         style="border-color: #005300;">
-                    <div class="project-description-container">
-                        <div class="project-title-container">
+                    <div class="project-description-container flex-col gap-md">
+                        <div class="project-title-container flex-row gap-sm items-center">
                             <div class="project-dash" style="background-color: #005300;"></div>
                             <h3>Sabiá</h3>
+                            <a href="https://github.com/vdlaranjeiro/Sabia" target="_blank">
+                                <img class="project-link" src="./assets/icons/link.svg"
+                                    alt="Link para o GitHub do projeto">
+                            </a>
                         </div>
                         <p>
                             Sistema de gestão de entrada de mercadorias em indústrias do setor de agronegócios. Gerencia
@@ -132,7 +146,7 @@
                             sistema de uma estrutura estática, atuando no desenvolvimento da lógica dos componentes e na
                             integração com o back-end.
                         </p>
-                        <div class="tech-row">
+                        <div class="tech-row flex-row gap-md">
                             <div class="tech-badge">
                                 <img class="tech-icon" src="./assets/icons/react.svg" alt="Logo do React">
                                 <p>React</p>
@@ -152,74 +166,384 @@
                         </div>
                     </div>
                 </div>
+                <div class="project-container" style="padding-top: 12px;">
+                    <img src="./assets/imgs/beelieve.png" alt="Projeto Beelieve" class="project-image"
+                        style="border-color: #f7df1e;">
+                    <div class="project-description-container flex-col gap-md">
+                        <div class="project-title-container flex-row gap-sm items-center">
+                            <div class="project-dash" style="background-color: #f7df1e;"></div>
+                            <h3>Beelieve</h3>
+                            <a href="https://github.com/vdlaranjeiro/Beelieve" target="_blank">
+                                <img class="project-link" src="./assets/icons/link.svg"
+                                    alt="Link para o GitHub do projeto">
+                            </a>
+                        </div>
+                        <p>
+                            Software de gestão de equipes e projetos desenvolvido para automatizar
+                            processos manuais realizados em planilhas Excel. Centraliza a organização de projetos usando
+                            estruturas WBS (Work Breakdown Structure) e metodologias IPDT (Integrated Product
+                            Development Team), com funcionalidades como cadastro de projetos, atribuição de responsáveis
+                            técnicos,
+                            acompanhamento de progresso em subníveis e geração de relatórios de avanço.
+                        </p>
+                        <p>
+                            Atuei, pela primeira vez, majoritariamente como desenvolvedor front-end, sendo o responsável
+                            por esta parte do projeto. Participei desde a prototipação inicial da interface até a sua
+                            implementação final, desenvolvendo componentes e integrando-os com a nossa API.
+                        </p>
+                        <div class="tech-row flex-row gap-md">
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/react.svg" alt="Logo do React">
+                                <p>React</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/java.svg" alt="Logo do Java">
+                                <p>Java</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/spring.svg" alt="Logo do Spring">
+                                <p>Spring</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/mysql.svg" alt="Logo do MySQL">
+                                <p>MySQL</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/mongodb.svg" alt="Logo do MongoDB">
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" style="padding-top: 12px;">
+                    <img src="./assets/imgs/nimbus.png" alt="Projeto Nimbus" class="project-image"
+                        style="border-color: #37c9ef;">
+                    <div class="project-description-container flex-col gap-md">
+                        <div class="project-title-container flex-row gap-sm items-center">
+                            <div class="project-dash" style="background-color: #37c9ef;"></div>
+                            <h3>Nimbus</h3>
+                            <a href="https://github.com/vdlaranjeiro/Nimbus" target="_blank">
+                                <img class="project-link" src="./assets/icons/link.svg"
+                                    alt="Link para o GitHub do projeto">
+                            </a>
+                        </div>
+                        <p>
+                            Sistema de coleta e visualização de dados meteorológicos que integra estações com sensores
+                            físicos (Arduino) a uma plataforma web. Oferece dashboards interativos para monitoramento em
+                            tempo real de parâmetros como temperatura e umidade, geração de relatórios históricos e
+                            disparo de alertas automáticos quando os valores ultrapassam limites pré-definidos.
+                        </p>
+                        <p>
+                            Fui o responsável pelo desenvolvimento das interfaces do sistema, novamente desde o design
+                            até a implementação. Trabalhei na visualização dos CRUDS e nos dashboards de acompanhamento
+                            dos dados coletados.
+                        </p>
+                        <div class="tech-row flex-row gap-md">
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/next.svg" alt="Logo do Next.js">
+                                <p>Next</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/typescript.svg" alt="Logo do Typescript">
+                                <p>Typescript</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/express.svg" alt="Logo do Express">
+                                <p>Express</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/postgresql.svg" alt="Logo do PostgreSQL">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/mongodb.svg" alt="Logo do MongoDB">
+                                <p>MongoDB</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/arduino.svg" alt="Logo do Arduino">
+                                <p>Arduino</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" style="padding-top: 12px;">
+                    <img src="./assets/imgs/solaris.png" alt="Projeto Solaris" class="project-image"
+                        style="border-color: #FF9D06;">
+                    <div class="project-description-container flex-col gap-md">
+                        <div class="project-title-container flex-row gap-sm items-center">
+                            <div class="project-dash" style="background-color: #FF9D06;"></div>
+                            <h3>Solaris</h3>
+                            <a href="https://github.com/vdlaranjeiro/Solaris" target="_blank">
+                                <img class="project-link" src="./assets/icons/link.svg"
+                                    alt="Link para o GitHub do projeto">
+                            </a>
+                        </div>
+                        <p>
+                            Aplicação web e mobile para mapeamento automático de nuvens e sombras em imagens coletadas
+                            do satélite CBERS-4A/WPM. O sistema consulta imagens do INPE, processa-as através de um
+                            modelo de IA para gerar máscaras georreferenciadas da cobertura de nuvens e sombras de
+                            nuvens. Inclui funcionalidades de histórico de consultas, download de imagens processadas e
+                            visualização das máscaras e estatísticas relacionadas.
+                        </p>
+                        <p>
+                            Trabalhei como desenvolvedor front-end e mobile, contribuindo com o design das interfaces e
+                            a implementação das visualizações e download das máscaras geradas por IA, tanto na web
+                            quanto em dispositivos móveis.
+                        </p>
+                        <div class="tech-row flex-row gap-md">
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/next.svg" alt="Logo do Next.js">
+                                <p>Next</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/react.svg" alt="Logo do React Native">
+                                <p>Native</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/typescript.svg" alt="Logo do Typescript">
+                                <p>Typescript</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/express.svg" alt="Logo do Express">
+                                <p>Express</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/postgresql.svg" alt="Logo do PostgreSQL">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/python.svg" alt="Logo do Python">
+                                <p>Python</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/pytorch.svg" alt="Logo do Pytorch">
+                                <p>Pytorch</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/anaconda.svg" alt="Logo do Anaconda">
+                                <p>Anaconda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container" style="padding-top: 12px;">
+                    <img src="./assets/imgs/iris.png" alt="Projeto Íris" class="project-image"
+                        style="border-color: #f9f9f9;">
+                    <div class="project-description-container flex-col gap-md">
+                        <div class="project-title-container flex-row gap-sm items-center">
+                            <div class="project-dash" style="background-color: #f9f9f9;"></div>
+                            <h3>Íris</h3>
+                            <a href="https://github.com/vdlaranjeiro/Iris" target="_blank">
+                                <img class="project-link" src="./assets/icons/link.svg"
+                                    alt="Link para o GitHub do projeto">
+                            </a>
+                        </div>
+                        <p>
+                            Sistema de análise de atendimentos que utiliza Processamento de Linguagem Natural (PLN) para
+                            processsar os dados das interações. Oferece dashboards interativos, categorização dos
+                            chamados, sumarização automática de conversas e busca semântica em históricos de
+                            atendimento.
+                        </p>
+                        <p>
+                            Atuei como desenvolvedor full-stack, desenvolvi toda a interface do sistema, do início ao
+                            fim e também participei no desenvolvimento de outros serviços, principalmente no que
+                            gerencia os chamados processados, fornecendo dados para os dashboards e lógicas
+                            relacionadas.
+                        </p>
+                        <div class="tech-row flex-row gap-md">
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/next.svg" alt="Logo do Next.js">
+                                <p>Next</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/typescript.svg" alt="Logo do Typescript">
+                                <p>Typescript</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/nest.svg" alt="Logo do Nest">
+                                <p>Nest</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/postgresql.svg" alt="Logo do PostgreSQL">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/python.svg" alt="Logo do Python">
+                                <p>Python</p>
+                            </div>
+                            <div class="tech-badge">
+                                <img class="tech-icon" src="./assets/icons/fastapi.svg" alt="Logo do Fastapi">
+                                <p>Fastapi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="technologies" class="section">
+        <section id="technologies" class="section flex-col">
             <div>
                 <h2 class="section-header">Tecnologias e Áreas de atuação</h2>
                 <hr class="section-header-divider">
             </div>
-            <div class="tech-tag-row">
-                <p class="tech-tag tech-frontend">#front-end</p>
-                <p class="tech-tag tech-backend">#back-end</p>
+            <div class="tech-tag-row flex-row gap-md">
+                <p class="tech-tag tech-language">#linguagens</p>
+                <p class="tech-tag tech-web">#desenvolvimento-web</p>
                 <p class="tech-tag tech-database">#banco-de-dados</p>
+                <p class="tech-tag tech-mobile">#mobile</p>
                 <p class="tech-tag tech-others">#outras-ferramentas</p>
             </div>
-            <div class="tech-description-container">
+            <div class="tech-description-container flex-col gap-lg">
                 <div>
                     <h3 style="margin-bottom: 8px">Tive contato</h3>
-                    <div class="tech-tag-row">
+                    <div class="tech-tag-row flex-row gap-md">
                         <div class="img-hover-container">
-                            <img src="./assets/icons/placeholder.svg" alt="placeholder" class="tech-img tech-frontend">
-                            <span class="hover-text">Placeholder</span>
+                            <img src="./assets/icons/colored/java.svg" alt="logo do java"
+                                class="tech-img tech-language">
+                            <span class="hover-text">Java</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/cypress.svg" alt="logo do cypress"
+                                class="tech-img tech-web">
+                            <span class="hover-text">Cypress</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/nest.svg" alt="logo do nest.js" class="tech-img tech-web">
+                            <span class="hover-text">Nest</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/spring.svg" alt="logo do spring"
+                                class="tech-img tech-web">
+                            <span class="hover-text">Spring</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/jest.svg" alt="logo do jest" class="tech-img tech-web">
+                            <span class="hover-text">Jest</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/mongodb.svg" alt="logo do mongodb"
+                                class="tech-img tech-database">
+                            <span class="hover-text">MongoDB</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/redis.svg" alt="logo do redis"
+                                class="tech-img tech-database">
+                            <span class="hover-text">Redis</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/react.svg" alt="logo do react native"
+                                class="tech-img tech-mobile">
+                            <span class="hover-text">React Native</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/flutter.svg" alt="logo do flutter"
+                                class="tech-img tech-mobile">
+                            <span class="hover-text">Flutter</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/firebase.svg" alt="logo do firebase"
+                                class="tech-img tech-mobile">
+                            <span class="hover-text">Firebase</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/docker.svg" alt="logo do docker"
+                                class="tech-img tech-others">
+                            <span class="hover-text">Docker</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/aws.svg" alt="logo do aws" class="tech-img tech-others">
+                            <span class="hover-text">AWS</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/arduino.svg" alt="logo do arduino"
+                                class="tech-img tech-others">
+                            <span class="hover-text">Arduino</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/pytorch.svg" alt="logo do pytorch"
+                                class="tech-img tech-others">
+                            <span class="hover-text">Pytorch</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/anaconda.svg" alt="logo do anaconda"
+                                class="tech-img tech-others">
+                            <span class="hover-text">Anaconda</span>
                         </div>
                     </div>
                 </div>
                 <div>
                     <h3 style="margin-bottom: 8px">Tenho conhecimento</h3>
-                    <div class="tech-tag-row">
+                    <div class="tech-tag-row flex-row gap-md">
                         <div class="img-hover-container">
-                            <img src="./assets/icons/colored/react.svg" alt="logo do react" class="tech-img tech-frontend">
-                            <span class="hover-text">React</span>
-                        </div>
-                        <div class="img-hover-container">
-                            <img src="./assets/icons/colored/javascript.svg" alt="logo do javascript" class="tech-img tech-frontend">
+                            <img src="./assets/icons/colored/javascript.svg" alt="logo do javascript"
+                                class="tech-img tech-language">
                             <span class="hover-text">JavaScript</span>
                         </div>
-                        <div class="tech-tag-row">
-                            <div class="img-hover-container">
-                                <img src="./assets/icons/colored/html5.svg" alt="logo do html" class="tech-img tech-frontend">
-                                <span class="hover-text">HTML5</span>
-                            </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/html5.svg" alt="logo do html"
+                                class="tech-img tech-language">
+                            <span class="hover-text">HTML5</span>
                         </div>
                         <div class="img-hover-container">
-                            <img src="./assets/icons/colored/css3.svg" alt="logo do css3" class="tech-img tech-frontend">
+                            <img src="./assets/icons/colored/css3.svg" alt="logo do css3"
+                                class="tech-img tech-language">
                             <span class="hover-text">CSS3</span>
                         </div>
                         <div class="img-hover-container">
-                            <img src="./assets/icons/colored/python.svg" alt="logo do python" class="tech-img tech-backend">
-                            <span class="hover-text">Python</span>
-                        </div>
-                        <div class="img-hover-container">
-                            <img src="./assets/icons/flask.svg" alt="logo do flask" class="tech-img tech-backend">
-                            <span class="hover-text">Flask</span>
-                        </div>
-                        <div class="img-hover-container">
-                            <img src="./assets/icons/colored/typescript.svg" alt="logo do typescript" class="tech-img tech-backend">
+                            <img src="./assets/icons/colored/typescript.svg" alt="logo do typescript"
+                                class="tech-img tech-language">
                             <span class="hover-text">Typescript</span>
                         </div>
                         <div class="img-hover-container">
-                            <img src="./assets/icons/colored/node.svg" alt="logo do node.js" class="tech-img tech-backend">
+                            <img src="./assets/icons/colored/python.svg" alt="logo do python"
+                                class="tech-img tech-language">
+                            <span class="hover-text">Python</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/react.svg" alt="logo do react"
+                                class="tech-img tech-web">
+                            <span class="hover-text">React</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/next.svg" alt="logo do next.js" class="tech-img tech-web">
+                            <span class="hover-text">Next.js</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/tailwindcss.svg" alt="logo do tailwind"
+                                class="tech-img tech-web">
+                            <span class="hover-text">Tailwindcss</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/apexcharts.png" alt="logo do apexcharts"
+                                class="tech-img tech-web">
+                            <span class="hover-text">Apex Charts</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/flask.svg" alt="logo do flask" class="tech-img tech-web">
+                            <span class="hover-text">Flask</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/fastapi.svg" alt="logo do fastapi" class="tech-img tech-web">
+                            <span class="hover-text">Fastapi</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/node.svg" alt="logo do node.js"
+                                class="tech-img tech-web">
                             <span class="hover-text">Node.js</span>
                         </div>
                         <div class="img-hover-container">
-                            <img src="./assets/icons/express.svg" alt="logo do express" class="tech-img tech-backend">
+                            <img src="./assets/icons/express.svg" alt="logo do express" class="tech-img tech-web">
                             <span class="hover-text">Express</span>
                         </div>
                         <div class="img-hover-container">
-                            <img src="./assets/icons/colored/mysql.svg" alt="logo do mysql" class="tech-img tech-database">
+                            <img src="./assets/icons/colored/mysql.svg" alt="logo do mysql"
+                                class="tech-img tech-database">
                             <span class="hover-text">MySQL</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/postgresql.svg" alt="logo do postgresql"
+                                class="tech-img tech-database">
+                            <span class="hover-text">PostgreSQL</span>
                         </div>
                         <div class="img-hover-container">
                             <img src="./assets/icons/colored/git.svg" alt="logo do git" class="tech-img tech-others">
@@ -228,6 +552,11 @@
                         <div class="img-hover-container">
                             <img src="./assets/icons/colored/jira.svg" alt="logo do jira" class="tech-img tech-others">
                             <span class="hover-text">Jira</span>
+                        </div>
+                        <div class="img-hover-container">
+                            <img src="./assets/icons/colored/figma.svg" alt="logo do figma"
+                                class="tech-img tech-others">
+                            <span class="hover-text">Figma</span>
                         </div>
                     </div>
                 </div>
